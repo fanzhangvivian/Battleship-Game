@@ -1,0 +1,99 @@
+/* 整体布局 */
+.container {
+    width: 80%; /* 盒子宽度占整体 80% */
+    max-width: 900px; /* 最大宽度，防止过宽 */
+    max-height: 1200px;
+    min-height: 700px;
+    margin: 90px auto; /* 居中并添加上下间距 */
+    background: white; /* 白色背景 */
+    padding: 30px;
+    border-radius: 20px; /* 圆角 */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    text-align: center; /* 让里面的内容居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 让内容在盒子中居中 */
+}
+/* 游戏棋盘 */
+.game-board {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* 5x8 棋盘网格 */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 55px);
+    gap: 1px;
+}
+
+/* 棋盘格子 */
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    border: 1px solid #333;
+    transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 鼠标悬停效果 */
+.cell:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* 命中（✔） */
+.hit {
+    background-color: rgb(93, 139, 93);
+    position: relative;
+}
+
+.hit::after {
+    content: "✔";
+    color: white;
+    font-size: 1.5em;
+}
+
+/* 未命中（X） */
+.miss {
+    background-color: rgb(141, 75, 75);
+    position: relative;
+}
+
+.miss::after {
+    content: "X";
+    color: white;
+    font-size: 1.5em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    margin-top: 20px;
+}
+
+/* 重新开始按钮 */
+.restart-btn {
+    background-color: orange;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: auto;
+    
+}
+
+.restart-btn:hover {
+    background-color: rgb(156, 28, 28);
+}
+.timer {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
