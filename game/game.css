@@ -109,7 +109,7 @@
     .grid {
         grid-template-columns: repeat(8, 40px); /* 缩小网格 */
         grid-template-rows: repeat(8, 40px);
-        gap: 2px;
+        gap: 4px;
     }
 
     .cell {
