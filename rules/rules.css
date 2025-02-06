@@ -1,22 +1,21 @@
-/* Rules Page Styles */
 
 .container {
-    width: 80%; /* 盒子宽度占整体 80% */
-    max-width: 900px; /* 最大宽度，防止过宽 */
+    width: 80%;
+    max-width: 900px; 
     max-height: 1200px;
     min-height: 700px;
-    margin: 90px auto; /* 居中并添加上下间距 */
-    background: white; /* 白色背景 */
+    margin: 90px auto; 
+    background: white; 
     padding: 30px;
-    border-radius: 20px; /* 圆角 */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* 添加阴影 */
-    text-align: center; /* 让里面的内容居中 */
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 让内容在盒子中居中 */
+    justify-content: center; 
 }
 
-/* Headings */
+
 h2 {
     color: #333;
     margin-bottom: 15px;
@@ -27,14 +26,13 @@ h3 {
     color: #444;
 }
 
-/* Paragraphs */
 p {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
 }
 
-/* Links (GitHub, etc.) */
+
 a {
     text-decoration: none;
     color: #007bff;
@@ -45,8 +43,8 @@ a:hover {
 }
 
 ul {
-    list-style-position: inside; /* 让项目符号靠近文本 */
-    padding-left: 0; /* 移除默认的内边距 */
-    margin-left: 20px; /* 适当调整左边距，使其对齐 */
+    list-style-position: inside; 
+    padding-left: 0; 
+    margin-left: 20px; 
 }
 

@@ -1,21 +1,21 @@
-/* 整体布局 */
+
 .container {
-    width: 80%; /* 盒子宽度占整体 80% */
-    max-width: 900px; /* 最大宽度，防止过宽 */
+    width: 80%; 
+    max-width: 900px; 
     max-height: 1200px;
     min-height: 700px;
-    margin: 90px auto; /* 居中并添加上下间距 */
-    background: white; /* 白色背景 */
+    margin: 90px auto; 
+    background: white; 
     padding: 30px;
-    border-radius: 20px; /* 圆角 */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* 添加阴影 */
-    text-align: center; /* 让里面的内容居中 */
+    border-radius: 20px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 让内容在盒子中居中 */
+    justify-content: center; 
     overflow-x: hidden;
 }
-/* 游戏棋盘 */
+
 .game-board {
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
     overflow-x: auto;
 }
 
-/* 5x8 棋盘网格 */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 80px);
@@ -31,7 +31,7 @@
     gap: 1px;
 }
 
-/* 棋盘格子 */
+
 .cell {
     width: 50px;
     height: 50px;
@@ -43,13 +43,13 @@
     align-items: center;
 }
 
-/* 鼠标悬停效果 */
+
 .cell:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-/* 命中（✔） */
+
 .hit {
     background-color: rgb(93, 139, 93);
     position: relative;
@@ -61,7 +61,7 @@
     font-size: 1.5em;
 }
 
-/* 未命中（X） */
+
 .miss {
     background-color: rgb(141, 75, 75);
     position: relative;
@@ -75,11 +75,11 @@
 
 .button-container {
     display: flex;
-    justify-content: center; /* 水平居中 */
+    justify-content: center; 
     margin-top: 20px;
 }
 
-/* 重新开始按钮 */
+
 .restart-btn {
     background-color: orange;
     color: white;
@@ -101,28 +101,28 @@
 }
 @media screen and (max-width: 768px) {
     .container {
-        width: 95%; /* 在小屏幕上减少宽度 */
-        min-height: auto; /* 允许高度自动调整 */
+        width: 95%; 
+        min-height: auto; 
         padding: 20px;
     }
 
     .grid {
-        grid-template-columns: repeat(8, 40px); /* 缩小网格 */
+        grid-template-columns: repeat(8, 40px); 
         grid-template-rows: repeat(8, 40px);
         gap: 4px;
     }
 
     .cell {
-        width: 40px; /* 缩小单个格子的大小 */
+        width: 40px; 
         height: 40px;
     }
 
     .timer {
-        font-size: 1em; /* 调整字体大小 */
+        font-size: 1em; 
     }
 
     .restart-btn {
-        font-size: 0.9em; /* 按钮缩小 */
+        font-size: 0.9em; 
         padding: 8px 16px;
     }
 }
